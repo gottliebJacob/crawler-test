@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocol-Based Image Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        section, .subsection, .group {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        img, .background-image {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #ccc;
+            margin: 10px;
+        }
+
+        .background-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            background-size: cover;
+            text-align: center;
+        }
+
+        /* CSS-defined background images */
+        .bg1 { background-image: url("https://via.placeholder.com/150/ff6347/ffffff"); }
+        .bg2 { background-image: url("https://via.placeholder.com/150/4682b4/ffffff"); }
+        .bg3 { background-image: url("https://via.placeholder.com/150/32cd32/ffffff"); }
+        .bg4 { background-image: url("https://via.placeholder.com/150/ffd700/ffffff"); }
+        .bg5 { background-image: url("https://via.placeholder.com/150/ff1493/ffffff"); }
+    </style>
+</head>
+<body>
+    <h1>Protocol-Based Images Displayed in Nested Structure</h1>
+
+    <section>
+        <h2>Using &lt;img&gt; Tag</h2>
+        <p>Examples of images loaded via the <code>&lt;img&gt;</code> tag, all with protocol-based URLs.</p>
+
+        <div class="subsection">
+            <h3>Protocol Examples</h3>
+            <div class="group">
+                <img src="https://via.placeholder.com/150/ff6347/ffffff" alt="Image 1 with protocol">
+                <img src="https://via.placeholder.com/150/4682b4/ffffff" alt="Image 2 with protocol">
+                <img src="https://via.placeholder.com/150/32cd32/ffffff" alt="Image 3 with protocol">
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h3>Additional Images</h3>
+            <div class="group">
+                <img src="https://via.placeholder.com/150/ffd700/ffffff" alt="Image 4 with protocol">
+                <img src="//via.placeholder.com/150/ff1493/ffffff" alt="Image 5 with protocol">
+                <img src="https://via.placeholder.com/150/8a2be2/ffffff" alt="Image 6 with protocol">
+                <img src="//via.placeholder.com/150/40e0d0/ffffff" alt="Image 7 with protocol">
+                <img src="https://via.placeholder.com/150/f4a460/ffffff" alt="Image 8 with protocol">
+                <img src="//via.placeholder.com/150/ff4500/ffffff" alt="Image 9 with protocol">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Using CSS Background-Image</h2>
+        <p>Examples of images displayed as CSS background images, all with protocol-based URLs.</p>
+
+        <div class="subsection">
+            <h3>CSS-Defined Background Images</h3>
+            <div class="group">
+                <div class="background-image bg1">Background 1</div>
+                <div class="background-image bg2">Background 2</div>
+                <div class="background-image bg3">Background 3</div>
+                <div class="background-image bg4">Background 4</div>
+                <div class="background-image bg5">Background 5</div>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h3>Inline Background Images</h3>
+            <div class="group">
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/40e0d0/ffffff');">Inline Background 1</div>
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/8b0000/ffffff');">Inline Background 2</div>
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/ffa07a/ffffff');">Inline Background 3</div>
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/d2691e/ffffff');">Inline Background 4</div>
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/9932cc/ffffff');">Inline Background 5</div>
+            </div>
+        </div>
+    </section>
+
+    <nav>
+        <h2>More Image Pages</h2>
+        <p>Explore additional pages with more examples of images in different formats:</p>
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+    </nav>
+</body>
+</html>

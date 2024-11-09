@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Examples - Page 1</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        img { width: 200px; height: 200px; margin: 10px; }
+        .bg-image { width: 200px; height: 200px; background-size: cover; margin: 10px; display: inline-block; }
+
+        /* CSS-defined background images with protocols */
+        .bg1 { background-image: url("https://via.placeholder.com/200/e9967a/ffffff"); }
+        .bg2 { background-image: url("https://via.placeholder.com/200/4682b4/ffffff"); }
+    </style>
+</head>
+<body>
+    <h1>Image Examples - Page 1</h1>
+    
+    <section>
+        <h2>Images Using &lt;img&gt; Tag</h2>
+        <div>
+            <img src="https://via.placeholder.com/200/e9967a/ffffff" alt="Example Image 1">
+            <img src="https://via.placeholder.com/200/4682b4/ffffff" alt="Example Image 2">
+            <img src="https://via.placeholder.com/200/32cd32/ffffff" alt="Example Image 3">
+        </div>
+    </section>
+
+    <section>
+        <h2>Images Using CSS Background-Image</h2>
+        <div>
+            <div class="bg-image bg1">CSS Background 1</div>
+            <div class="bg-image bg2">CSS Background 2</div>
+            <div class="bg-image" style="background-image: url('https://via.placeholder.com/200/d2691e/ffffff');">Inline Background 1</div>
+            <div class="bg-image" style="background-image: url('https://via.placeholder.com/200/9932cc/ffffff');">Inline Background 2</div>
+        </div>
+    </section>
+</body>
+</html>
