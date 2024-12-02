@@ -24,20 +24,19 @@
         }
 
         .group {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(6, 150px);
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
+            height: 150px;
         }
 
-        img, .background-image {
+        .background-image {
             width: 150px;
             height: 150px;
             border: 2px solid #ccc;
             margin: 10px;
-        }
-
-        .background-image {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -46,13 +45,6 @@
             background-size: cover;
             text-align: center;
         }
-
-        /* CSS-defined background images */
-        .bg1 { background-image: url("https://via.placeholder.com/150/ff6347/ffffff"); }
-        .bg2 { background-image: url("https://via.placeholder.com/150/4682b4/ffffff"); }
-        .bg3 { background-image: url("https://via.placeholder.com/150/32cd32/ffffff"); }
-        .bg4 { background-image: url("https://via.placeholder.com/150/ffd700/ffffff"); }
-        .bg5 { background-image: url("https://via.placeholder.com/150/ff1493/ffffff"); }
     </style>
 </head>
 <body>
@@ -85,28 +77,13 @@
     </section>
 
     <section>
-        <h2>Using CSS Background-Image</h2>
-        <p>Examples of images displayed as CSS background images, all with protocol-based URLs.</p>
-
         <div class="subsection">
-            <h3>CSS-Defined Background Images</h3>
             <div class="group">
-                <div class="background-image bg1">Background 1</div>
-                <div class="background-image bg2">Background 2</div>
-                <div class="background-image bg3">Background 3</div>
-                <div class="background-image bg4">Background 4</div>
-                <div class="background-image bg5">Background 5</div>
-            </div>
-        </div>
-
-        <div class="subsection">
-            <h3>Inline Background Images</h3>
-            <div class="group">
-                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/40e0d0/ffffff');">Inline Background 1</div>
-                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/8b0000/ffffff');">Inline Background 2</div>
-                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/ffa07a/ffffff');">Inline Background 3</div>
-                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/d2691e/ffffff');">Inline Background 4</div>
-                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/9932cc/ffffff');">Inline Background 5</div>
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/40e0d0/ffffff');"></div>
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/8b0000/ffffff');"></div>
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/ffa07a/ffffff');"></div>
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/d2691e/ffffff');"></div>
+                <div class="background-image" style="background-image: url('https://via.placeholder.com/150/9932cc/ffffff');"></div>
             </div>
         </div>
     </section>
